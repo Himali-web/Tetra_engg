@@ -5590,8 +5590,8 @@ header .logo span {
   color: var(--primary-white);
 }
 header .logo span img {
-  width: 135px;
-  height: 90px;
+  width: 170px;
+  height: 110px;
   object-fit: contain;
 }
 header .logo .show-sticky {
@@ -5637,6 +5637,10 @@ header.scrolled .logo .show-sticky {
   opacity: 1;
   visibility: visible;
 }
+header.scrolled .logo span img {
+  width: 120px;
+  height: 75px;
+}
 header.scrolled .logo .hide-sticky {
   opacity: 0;
   visibility: hidden;
@@ -5676,7 +5680,7 @@ header.header-2 .language-switcher a {
 }
 header.header-2 .header-wrapper {
   background-color: var(--primary-white);
-  height: 95px;
+  height: 110px;
   padding: 0 2rem 0 5rem;
   position: relative;
 }
@@ -5721,9 +5725,37 @@ header.header-2 .header-wrapper .hamburger-icon .bar {
   background-color: var(--secondary-color);
 }
 @media (max-width: 1200px) {
-  header.header-2 .header-wrapper .navigation-menu.desktop > li {
-    padding-right: 2.5rem;
+  header.header-2 .header-wrapper .navigation-menu.desktop {
+    gap: 2.8rem;
   }
+}
+@media (max-width: 1100px) {
+  header.header-2 .container {
+    padding-right: 2.5rem;
+    padding-left: 2rem;
+  }
+  header.header-2 .header-wrapper .navigation-menu.desktop {
+    gap: 2.2rem;
+  }
+}
+
+header.header-2 .header-wrapper .navigation-menu.desktop > li > a {
+  transition: color 0.25s ease;
+}
+header.header-2 .header-wrapper .navigation-menu.desktop > li > a::after {
+  background-color: var(--primary-color);
+}
+header.header-2 .header-wrapper .navigation-menu.desktop > li > a:hover {
+  color: var(--primary-color);
+}
+header.header-2 .header-wrapper .navigation-menu.desktop > li > a.active {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+header.header-2 .header-wrapper .navigation-menu.desktop > li > a.active::after {
+  display: block;
+  width: 100%;
+  opacity: 1;
 }
 
 header.demo-header .container {
@@ -6597,14 +6629,15 @@ header.construction-header .header-wrapper .icons-block .btn {
 }
 .navigation-menu.desktop {
   padding: 0;
+  gap: 4rem;
 }
 .navigation-menu.desktop > li {
   padding: 0;
-  padding-right: 4.5rem;
 }
 .navigation-menu.desktop > li > a {
   justify-content: flex-start;
   padding: 0;
+  white-space: nowrap;
 }
 @media (max-width: 991px) {
   .navigation-menu.desktop {
