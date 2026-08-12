@@ -9554,7 +9554,17 @@ header.scrolled .hamburger-icon .bar {
 
 .page-header-section {
   position: relative;
-  padding: 24rem 0 15rem;
+  padding: 24rem 0 7rem;
+}
+@media (max-width: 991px) {
+  .page-header-section {
+    padding: 18rem 0 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .page-header-section {
+    padding: 14rem 0 4rem;
+  }
 }
 .page-header-section::before {
   content: "";
@@ -12441,7 +12451,7 @@ header.scrolled .hamburger-icon .bar {
   }
 }
 .contact-detail-section .contact-detail-wrapper .contact-cards-section {
-  margin-top: 0;
+  margin-top: 0px;
 }
 .contact-detail-section .contact-detail-wrapper .contact-cards-section .contact-cards-wrapper .contact-card {
   position: relative; /* Enable pseudo-element positioning */
@@ -12981,16 +12991,16 @@ header.scrolled .hamburger-icon .bar {
 }
 
 .contact-detail-section {
-  padding: 20rem 0;
+  padding: 7rem 0 20rem;
 }
 @media (max-width: 991px) {
   .contact-detail-section {
-    padding: 10rem 0;
+    padding: 5rem 0 10rem;
   }
 }
 @media (max-width: 767px) {
   .contact-detail-section {
-    padding: 5rem 0 10rem;
+    padding: 4rem 0 10rem;
   }
 }
 .contact-detail-section .contact-detail-wrapper .main-heading {

@@ -12,7 +12,13 @@
 // ==========================================
 .page-header-section{
     position: relative;
-    padding: 24rem 0 15rem;
+    padding: 24rem 0 7rem;
+    @media (max-width: 991px) {
+        padding: 18rem 0 5rem;
+    }
+    @media (max-width: 767px) {
+        padding: 14rem 0 4rem;
+    }
     &::before {
         content: '';
         position: absolute;
