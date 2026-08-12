@@ -2475,6 +2475,7 @@ footer.footer-red::before {
   display: grid;
   grid-template-columns: 2fr 1fr;
   height: fit-content;
+  transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 [dir=rtl] .services-section .service-card {
   clip-path: var(--slope-clip-top-left-3);
@@ -2486,6 +2487,7 @@ footer.footer-red::before {
 }
 .services-section .service-card .service-img {
   height: auto;
+  overflow: hidden;
 }
 .services-section .service-card .service-img img {
   height: 100%;
@@ -2493,6 +2495,7 @@ footer.footer-red::before {
   object-fit: cover;
   object-position: left;
   clip-path: var(--slope-clip-top-right-3);
+  transition: transform 0.6s ease-in-out;
 }
 [dir=rtl] .services-section .service-card .service-img img {
   clip-path: var(--slope-clip-top-left-3);
